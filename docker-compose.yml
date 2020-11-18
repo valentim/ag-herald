@@ -1,0 +1,12 @@
+version: "3.6"
+services:
+  ag-herald:
+    container_name: ag-herald
+    build: .
+    tty: true
+    stdin_open: true
+    command: ./main
+    # volumes:
+    #   - ./:/go/src/github.com/valentim/ag-herald
+    ports:
+      - 4000:4000
